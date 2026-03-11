@@ -1,17 +1,22 @@
-name:CI Pipelin
+name: CI Pipeline
 
 on:
   push:
     branches:
-- main
+      - main
 
 jobs:
-   build:
-     runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-         steps:
-- name: Checkout Code
-    uses:
-actions/checkout@v3
-- name: Run Python Script
-  run: python3 app.py
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run Application
+        run: python app.py
