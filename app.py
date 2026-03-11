@@ -1,1 +1,1 @@
-print("CI/CD pipeline working perfectly!")
+print("CI/CD pipeline working successfully!")
