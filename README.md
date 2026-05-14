@@ -1,4 +1,4 @@
-    # flask-cicd-demo 🚀
+# flask-cicd-demo 🚀
 
 A production-grade CI/CD pipeline built with GitHub Actions and Docker. Automatically runs tests, checks code quality, and pushes a Docker image to Docker Hub on every commit — completing in under 60 seconds.
 
